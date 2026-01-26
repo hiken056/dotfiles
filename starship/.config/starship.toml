@@ -1,0 +1,40 @@
+# ~/.config/starship.toml
+
+add_newline = true
+
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[✗](bold red)"
+
+[package]
+disabled = true
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[git_status]
+style = "bold red"
+
+[directory]
+truncation_length = 3
+truncate_to_repo = false
+style = "bold cyan"
+read_only = " "
+
+[cmd_duration]
+min_time = 2000
+format = "[$duration]($style) "
+style = "yellow"
+
+# Iconițe pentru limbaje (apar doar când ești într-un folder cu proiectul respectiv)
+[golang]
+symbol = " "
+[java]
+symbol = " "
+[nodejs]
+symbol = " "
+[python]
+symbol = " "
+[rust]
+symbol = " "
