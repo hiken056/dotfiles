@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # 1. Definirea căii (folosind variabila $HOME pentru portabilitate)
-WALL="$HOME/.config/wallpapers/castel.jpeg"
+WALL="$HOME/.config/wallpapers/stele.jpg"
 
 # 2. Restart hyprpaper
 pkill hyprpaper

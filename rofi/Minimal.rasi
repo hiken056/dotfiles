@@ -1,0 +1,99 @@
+
+/*
+ * ROFI color theme - Dark Blue Transparent
+ * Location: /usr/share/rofi/themes/spotlight.rasi
+ */
+
+configuration {
+  font: "JetBrains Mono Nerd Font Medium 12"; 
+
+  drun {
+    display-name: "🔎";
+  }
+
+  run {
+    display-name: "";
+  }
+
+  window {
+    display-name: "🪟";
+  }
+
+  timeout {
+    delay: 10;
+    action: "kb-cancel";
+  }
+}
+
+* {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  spacing: 0;
+
+  /* --- PALETA DE CULORI --- */
+  /* Albastru Inchis Profund cu transparenta 85% */
+  bg: #0F141FD9; 
+  /* Un albastru putin mai deschis pentru input */
+  bg-alt: #182030; 
+  /* Text alb pur */
+  fg: #FFFFFF; 
+  /* Text gri-albastrui */
+  fg-alt: #5D7096; 
+
+  background-color: @bg;
+  text-color: @fg;
+}
+
+window {
+  transparency: "real";
+  border: 2px;
+  border-color: @bg-alt;
+  border-radius: 10px;
+  width: 600px;
+}
+
+mainbox {
+  children: [inputbar, listview];
+  background-color: transparent;
+}
+
+inputbar {
+  children: [prompt, entry];
+  background-color: transparent;
+}
+
+entry {
+  padding: 12px 0;
+  background-color: transparent;
+  placeholder: "Search...";
+  placeholder-color: @fg-alt;
+}
+
+prompt {
+  padding: 12px;
+  background-color: transparent;
+  text-color: #5daafc;
+}
+
+listview {
+  lines: 8;
+  background-color: transparent;
+  margin: 10px 0 0 0;
+}
+
+element {
+  children: [element-text];
+  background-color: transparent;
+  padding: 5px;
+}
+
+element-text {
+  padding: 8px;
+  text-color: @fg-alt;
+  background-color: transparent;
+}
+
+element-text selected {
+  text-color: @fg;
+}
